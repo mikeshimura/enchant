@@ -1,6 +1,11 @@
-Name: libffi                                                                                           
-Description: Container DataType library                                                                
-Version: 3.2.1                                                                                        
-Libs: -L/tmp/libffi-3.2.1/x86_64-unknown-linux-gnu/.libs -lffi                                                                               
-Cflags: -I/tmp/libffi-3.2.1/x86_64-unknown-linux-gnu/include
- 
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${exec_prefix}/lib/../lib
+includedir=${libdir}/libffi-3.2.1/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.2.1
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}
