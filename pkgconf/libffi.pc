@@ -1,6 +1,6 @@
 Name: libffi                                                                                           
 Description: Container DataType library                                                                
 Version: 3.2.1                                                                                        
-Libs: -L/tmp/libffi-3.2.1/x86_64-unknown-linux-gnu/.libs -lcdt                                                                                
+Libs: -L/tmp/libffi-3.2.1/x86_64-unknown-linux-gnu/.libs -lffi                                                                               
 Cflags: -I/tmp/libffi-3.2.1/x86_64-unknown-linux-gnu/include
  
